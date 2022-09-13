@@ -1,5 +1,6 @@
-var1 = int(input())
-var2 = int(input())
+print("Let's do a couple of arithmatic operations on 2 integers")
+var1 = int(input("Enter first number"))
+var2 = int(input("Enter second number"))
 print('Add: ',var1+var2)
 print('Difference: ',var1-var2)
 print('Multiply: ',var1*var2)
