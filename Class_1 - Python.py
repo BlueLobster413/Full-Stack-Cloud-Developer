@@ -1,0 +1,7 @@
+var1 = int(input())
+var2 = int(input())
+print('Add: ',var1+var2)
+print('Difference: ',var1-var2)
+print('Multiply: ',var1*var2)
+print('Power: ',var1**var2)
+print('Divide: ',var1/var2)
