@@ -1,0 +1,40 @@
+<!--7-->
+<!-- <form action = "" method = "get">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name">
+    <input type="submit" value="OK">
+</form> -->
+
+<!--8-->
+<!-- <form action = "" method = "get">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name">
+    <input type="submit" value="OK">
+</form> -->
+
+<!--8.2-->
+<!-- <form action = "" method = "post">
+    {% csrf_token %}
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name">
+    <input type="submit" value="OK">
+</form> -->
+
+<!--9-->
+<!-- <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit">
+</form> -->
+
+<!--10-->
+<form method="POST" enctype="multipart/form-data">
+    <!-- Management data of formset -->
+    {{ formset.management_data }}
+    <!-- Security token -->
+    {% csrf_token %}
+    <!-- Using the formset -->
+    {{ formset.as_p }}
+      
+    <input type="submit" value="Submit">
+</form>
